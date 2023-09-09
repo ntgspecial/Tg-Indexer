@@ -57,7 +57,7 @@ class IndexView(BaseView):
             entry = None
             if m.file and not isinstance(m.media, types.MessageMediaWebPage):
                 filename = get_file_name(m, quote_name=False)
-                insight = m.text[:60] if m.text else filename
+                insight = m.text if m.text else filename
                 entry = dict(
                     file_id=m.id,
                     media=True,
