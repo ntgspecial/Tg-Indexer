@@ -3,9 +3,11 @@
   "description": "Telegram",
   "repository": "https://github.com/ntgspecial/Tg-Indexer",
   "logo": "https://telegra.ph/file/8669281aa2360613f7511.jpg",
-  "keywords": ["Telegram"],
+  "keywords": [
+    "Telegram"
+  ],
   "env": {
-      "INDEX_SETTINGS": {
+    "INDEX_SETTINGS": {
       "description": "INDEX SETTINGS"
     },
     "APP_ID": {
@@ -13,12 +15,12 @@
     },
     "API_HASH": {
       "description": "Your API_HASH, Get it from https://my.telegram.org/apps"
-    }, 
-    "SESSION_STRING":{
+    },
+    "SESSION_STRING": {
       "description": "TG SESSION"
-  }, 
-   },
-   "buildpacks": [
+    }
+  },
+  "buildpacks": [
     {
       "url": "heroku/python"
     }
